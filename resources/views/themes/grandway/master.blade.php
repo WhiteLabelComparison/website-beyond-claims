@@ -31,79 +31,20 @@
                         <div class="col-lg-3 pull-left"><div class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="" height="30" /></a></div></div>
                         <div class="col-lg-9 pull-right">
                             <div class="menu">
-                                <div id="dl-menu" class="dl-menuwrapper">
+                                <div id="dl-menu">
                                     <button class="dl-trigger">Open Menu</button>
                                     <ul class="dl-menu">
-                                        <li class="current"><a href="#" data-description="Get Started">Home</a>
+                                        <li @if($menuItem=='index')class="current"@endif><a href="/" data-description="Get Started">Home</a></li>
+                                        <li @if($menuItem=='about')class="current"@endif><a href="/about-us" data-description="Who are we?">About Us</a></li>
+                                        <li @if(substr($menuItem,0,8)=='services')class="current"@endif><a href="/our-services" data-description="How can we help?">Our Services</a>
                                             <ul class="dl-submenu">
-                                                <li><a href="index.html">Home Corporate</a></li>
-                                                <li><a href="index_2.html">Home Animate</a></li>
-                                                <li><a href="index_3.html">Home Business</a></li>
-                                                <li><a href="index_4.html">Home Industrial</a></li>
+                                                <li><a href="/our-services/package-bank-accounts">Package Bank Accounts</a></li>
+                                                <li><a href="/our-services/payment-protection-insurance">Payment Protection Insurance</a></li>
+                                                <li><a href="/our-services/payment-protection-insurance-redress">PPI Redress</a></li>
                                             </ul>
                                         </li>
-                                        <li><a href="#" data-description="Theme Basics">Pages</a>
-                                            <ul class="dl-submenu">
-                                                <li><a href="about.html">About Us</a></li>
-                                                <li><a href="services.html">Services</a></li>
-                                                <li><a href="contacts.html">Contact</a></li>
-                                                <li><a href="pricing_tables.html">Pricing Tables</a></li>
-                                                <li><a href="clients.html">Our Clients</a></li>
-                                                <li><a href="404.html">404 Error</a></li>
-                                                <li><a href="faq.html">F.A.Q</a></li>
-                                                <li><a href="left_sidebar_page.html">Left Sidebar Page</a></li>
-                                                <li><a href="right_sidebar_page.html">Right Sidebar Page</a></li>
-                                                <li>
-                                                    <a href="#">Third Level Menu</a>
-                                                    <ul class="dl-submenu">
-                                                        <li><a href="#">Sublevel Title</a></li>
-                                                        <li><a href="#">Another Menu</a></li>
-                                                        <li><a href="#">And One More</a></li>
-                                                    </ul>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#" data-description="Our projects">Portfolio</a>
-                                            <ul class="dl-submenu">
-                                                <li><a href="portfolio_2.html">2 Columns</a></li>
-                                                <li><a href="portfolio_3.html">3 Columns</a></li>
-                                                <li><a href="portfolio_4.html">4 Columns</a></li>
-                                                <li><a href="single_portfolio_half.html">Single Portfolio Half</a></li>
-                                                <li><a href="single_portfolio_wide.html">Single Portfolio Wide</a></li>
-                                                <li><a href="portfolio_sidebar.html">Portfolio Sidebar</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#" data-description="News & Events">The Blog</a>
-                                            <ul class="dl-submenu">
-                                                <li><a href="blog_large_fullwidth.html">Large Fullwidth</a></li>
-                                                <li><a href="blog_large_sidebar.html">Large Sidebar</a></li>
-                                                <li><a href="blog_two_columns.html">Two Columns</a></li>
-                                                <li><a href="blog_two_columns_sidebar.html">Two Columns Sidebar</a></li>
-                                                <li><a href="blog_medium.html">Medium Fullwidth</a></li>
-                                                <li><a href="blog_medium_sidebar.html">Medium Sidebar</a></li>
-                                                <li><a href="blog_single.html">Single Fullwidth</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="#" data-description="Elements">Shortcodes</a>
-                                            <ul class="dl-submenu">
-                                                <li><a href="accordion.html">Accordion</a></li>
-                                                <li><a href="alerts.html">Alerts</a></li>
-                                                <li><a href="badges_and_labels.html">Badges and Labels</a></li>
-                                                <li><a href="buttons.html">Buttons</a></li>
-                                                <li><a href="carousel.html">Carousel</a></li>
-                                                <li><a href="columns.html">Columns</a></li>
-                                                <li><a href="retina_icons.html">Retina Icons</a></li>
-                                                <li><a href="google_maps.html">Google Maps</a></li>
-                                                <li><a href="panels.html">Panels</a></li>
-                                                <li><a href="progress_bar.html">Progress Bar</a></li>
-                                                <li><a href="tables.html">Tables</a></li>
-                                                <li><a href="tabs.html">Tabs</a></li>
-                                                <li><a href="testimonial_rotator.html">Testimonial Rotator</a></li>
-                                                <li><a href="tooltips.html">Tooltips</a></li>
-                                                <li><a href="typography.html">Typography</a></li>
-                                            </ul>
-                                        </li>
-                                        <li><a href="http://themeforest.net/item/grandway-fully-responsive-html5css3-template/4723385" data-description="Buy Now">Purchase</a></li>
+                                        <li><a href="/won-what-now" data-description="What to do next">Won?</a></li>
+                                        <li @if($menuItem=='contact')class="current"@endif><a href="/contact-us" data-description="Get In Touch">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -121,25 +62,18 @@
 
 
 
-
     <div class="footer">
         <div class="container ">
             <div class="row">
-                <div class="col-lg-3 col-md-3">
-                    <div class="footer-block"><img src="assets/images/logo_foot.png" alt="" class="foot_marg"></div>
-                    <div class="foot-text">Praesent sodales ullamcorper felis, eget rutrum nisi dignissim vel. Nulla non aringin metus, in tincidunt lacus aenean scelerisq cillum dolore eu rugiat nulla pariatur rutru nisi dignissim.</div>
+                <div class="col-lg-4 col-md-4">
+                    <div class="footer-block">Choice Claims</div>
+                    <div class="foot-text">
+                        <p>Choice Claims is a trading style of CDW Bureau Ltd (Company No. 07960985).</p>
+                        <p>Regulated by the Claims Management Regulator in respect of regulated claims management activities, authorisation number CRM29686.</p>
+                        <p>ICO Reg No. ZA076747.</p>
+                    </div>
                 </div>
-                <div class="col-lg-3 col-md-3">
-                    <div class="footer-block">Contact info</div>
-                    <ul class="contacts images_bg">
-                        <li class="address">Jeremy Martinson 455, California</li>
-                        <li class="phone">Phone:  <a href="#">(507) 996 - 1052</a></li>
-                        <li class="fax">Fax: <a href="#">(509) 128 - 73542</a></li>
-                        <li class="email">E-Mail: <a href="#">example@mail.com</a></li>
-                        <li class="map"><a href="#">Find us on Google Maps</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-5 col-md-5">
                     <div class="footer-block">Tags</div>
                     <div class="tag_cloud">
                         <a href="#">HTML 5</a>
@@ -154,11 +88,14 @@
                         <a href="#">jQuery</a>
                     </div>
                 </div>
+
                 <div class="col-lg-3 col-md-3">
-                    <div class="footer-block">Flickr Widget</div>
-                    <div class="widget_flickr">
-                        <div class="flickr_container"><script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=52617155@N08"></script></div>
-                    </div>
+                    <div class="footer-block">Contact info</div>
+                    <ul class="contacts images_bg">
+                        <li class="address">Hamill House, 112-116 Chorley New Road, Bolton, BL1 4DH</li>
+                        <li class="phone">Phone:  <a href="#">0161 396 0396</a></li>
+                        <li class="email">E-Mail: <a href="mailto:info@choiceclaims.co.uk">info@choiceclaims.co.uk</a></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -167,7 +104,7 @@
         <div class="container ">
             <div class="row">
                 <div class="col-lg-6 col-md-6 col-ms-6 pull-left col-ms-12">
-                    <div class="copyright">Copyright 2014 GrandWay. Design by <a href="http://themeforest.net/user/Dankov" target="_blank">Dankov</a></div>
+                    <div class="copyright"></div>
                 </div>
                 <div class="col-lg-6 col-md-6 col-ms-6 pull-right col-ms-12">
                     <div class="foot_menu">
