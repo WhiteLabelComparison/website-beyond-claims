@@ -270,21 +270,7 @@
             </div>
         </div>
     </div>
-    <div class="twitter_fot marg50">
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-11 col-md-10">
-                    <div class="tweet"></div>
-                </div>
-                <div class="col-lg-1  col-md-2 hidden-pag">
-                    <div class="paginat">
-                        <a id="prev"><i class="fa fa-arrow-left"></i></a>
-                        <a id="next"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 
 
 @endsection

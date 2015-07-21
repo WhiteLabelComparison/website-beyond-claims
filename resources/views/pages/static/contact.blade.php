@@ -57,28 +57,13 @@
                 <h3 class="title"><span>Business Hours</span></h3>
                 <p class="adress_cont">
                     <i class="fa fa-unlock icon_foot"></i> Weekdays: 9am to 5:30pm<br>
-                    <i class="fa fa-lock icon_foot"></i> Weekends: closed
+                    <i class="fa fa-lock icon_foot"></i>  &nbsp;&nbsp;Weekends: closed
                 </p>
                 <h3 class="title"><span>Social Network</span></h3>
                 <ul class="soc-contacts pull-left">
                     <li class="facebook"><a href="#"><i class="fa fa-facebook ic_soc"></i></a></li>
                     <li class="twitter"><a href="#"><i class="fa fa-twitter ic_soc"></i></a></li>
                 </ul>
-            </div>
-        </div>
-    </div>
-    <div class="twitter_fot marg50">
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-11 col-md-10">
-                    <div class="tweet"></div>
-                </div>
-                <div class="col-lg-1  col-md-2 hidden-pag">
-                    <div class="paginat">
-                        <a id="prev"><i class="fa fa-arrow-left"></i></a>
-                        <a id="next"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
             </div>
         </div>
     </div>

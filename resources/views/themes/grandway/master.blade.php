@@ -7,19 +7,19 @@
     <title>Home Business - GrandWay Fully Responsive & Retina Ready Template</title>
     <meta content="" name="description">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
-    <link href="assets/images/favicon.ico" rel="shortcut icon"/>
+    <link href="/assets/images/favicon.ico" rel="shortcut icon"/>
     <!-- JS FILES -->
-    <script type="text/javascript" src="assets/js/jquery-1.20.2.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/modernizr.custom.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery-1.20.2.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="/assets/js/modernizr.custom.js"></script>
     <!-- CSS FILES -->
-    <link href="assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/css/responsive.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/css/testimonialrotator.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/showbizpro/css/settings.css" media="screen" rel="stylesheet" type="text/css">
-    <link href="assets/showbizpro/fancybox/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/assets/css/style.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/assets/css/responsive.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/assets/css/testimonialrotator.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/assets/rs-plugin/css/settings.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/assets/css/navstylechange.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/assets/showbizpro/css/settings.css" media="screen" rel="stylesheet" type="text/css">
+    <link href="/assets/showbizpro/fancybox/jquery.fancybox.css" media="screen" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div id="wrapper">
@@ -28,14 +28,14 @@
             <nav>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 pull-left"><div class="logo"><a href="index.html"><img src="assets/img/logo.png" alt="" height="30" /></a></div></div>
+                        <div class="col-lg-3 pull-left"><div class="logo"><a href="index.html"><img src="/assets/img/logo.png" alt="" height="30" /></a></div></div>
                         <div class="col-lg-9 pull-right">
                             <div class="menu">
                                 <div id="dl-menu">
                                     <button class="dl-trigger">Open Menu</button>
                                     <ul class="dl-menu">
                                         <li @if($menuItem=='index')class="current"@endif><a href="/" data-description="Get Started">Home</a></li>
-                                        <li @if($menuItem=='about')class="current"@endif><a href="/about-us" data-description="Who are we?">About Us</a></li>
+                                        <!-- <li @if($menuItem=='about')class="current"@endif><a href="/about-us" data-description="Who are we?">About Us</a></li> -->
                                         <li @if(substr($menuItem,0,8)=='services')class="current"@endif><a href="/our-services" data-description="How can we help?">Our Services</a>
                                             <ul class="dl-submenu">
                                                 <li><a href="/our-services/package-bank-accounts">Package Bank Accounts</a></li>
@@ -61,6 +61,22 @@
     @yield('content')
 
 
+
+    <div class="twitter_fot marg50">
+        <div class="container ">
+            <div class="row">
+                <div class="col-lg-11 col-md-10">
+                    <div class="tweet"></div>
+                </div>
+                <div class="col-lg-1  col-md-2 hidden-pag">
+                    <div class="paginat">
+                        <a id="prev"><i class="fa fa-arrow-left"></i></a>
+                        <a id="next"><i class="fa fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="footer">
         <div class="container ">
@@ -121,18 +137,18 @@
         </div>
     </div>
 </div>
-<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
-<script type="text/javascript" src="assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
-<script type="text/javascript" src="assets/showbizpro/js/jquery.themepunch.showbizpro.js"></script>
-<script type="text/javascript" src="assets/showbizpro/fancybox/jquery.fancybox.pack.js"></script>
-<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
-<script type="text/javascript" src="assets/js/sticky.js"></script>
-<script type="text/javascript" src="assets/js/bootstrap.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.tweet.min.js"></script>
-<script type="text/javascript" src="assets/js/jquery.cycle.all.js"></script>
-<script type="text/javascript" src="assets/js/retina.js"></script>
-<script type="text/javascript" src="assets/js/testimonialrotator.js"></script>
-<script type="text/javascript" src="assets/js/jquery.dlmenu.js"></script>
-<script type="text/javascript" src="assets/js/main.js"></script>
+<script type="text/javascript" src="/assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
+<script type="text/javascript" src="/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>
+<script type="text/javascript" src="/assets/showbizpro/js/jquery.themepunch.showbizpro.js"></script>
+<script type="text/javascript" src="/assets/showbizpro/fancybox/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="/assets/js/waypoints.min.js"></script>
+<script type="text/javascript" src="/assets/js/sticky.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.tweet.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.cycle.all.js"></script>
+<script type="text/javascript" src="/assets/js/retina.js"></script>
+<script type="text/javascript" src="/assets/js/testimonialrotator.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.dlmenu.js"></script>
+<script type="text/javascript" src="/assets/js/main.js"></script>
 </body>
 </html>

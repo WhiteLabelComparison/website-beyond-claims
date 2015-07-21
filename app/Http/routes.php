@@ -3,7 +3,8 @@
 
 Route::get('', 'StaticPageController@index');
 
-Route::get('about-us', 'StaticPageController@about');
+// Hide the about us page for now
+// Route::get('about-us', 'StaticPageController@about');
 
 Route::group(['prefix' => 'our-services'], function(Illuminate\Routing\Router $route) {
     $route->get('', 'StaticPageController@services');
