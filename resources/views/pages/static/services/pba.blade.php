@@ -16,11 +16,37 @@
     <div class="container marg75">
         <div class="row">
             <div class="col-lg-6">
-                <img class="img-thumbnail" src="/assets/images/business.png" alt="" >
+                <img class="img-thumbnail" src="/assets/images/pba-benefits.png" alt="" >
             </div>
             <div class="col-lg-6">
-                <div class="name_serv">We know how to help you!</div>
-                <p class="about_text">Maecenas sagittis varius odio eget blandit. Sed facilisis adipiscing sem, non vehicula mauris laoreet semper. Aenean tellus dui, gravida in consequat semper, mattis in massa. Aenean dictum scelerisque nisl non placerat. Vivamus ultricies elit vitae ligula volutpat, sollicitudin sollicitudin lorem suscipit. Mauris aliquet auctor arcu, quis tristique massa sodales eu. Curabitur ornare euismod molestie. Nam vitae sem a nulla pharetra consequat eget quis nulla. Cras in sodales risus. Duis vitae nulla tellus. Sed tincidunt aliquet odio nec sagittis. Etiam commodo semper nunc ut volutpat. Fusce convallis erat nec eros scelerisque, ut laoreer.<br><br>Donec non faucibus massa, ut feugiat ipsum. Sed rhoncus at libero at elementum. Vivamus id tincidunt felis. In vulputate sit amet elit in malesuada. Nunc neque ipsum, tincidunt in ligula eu, adipiscing blandit nisi. Maecenas sodales sem at turpis ultricies, quis vehicula quam interdum. Aliquam erat volutpat. Proin vel quam nec mi congue dignissim.<br><br>Aenean quis aliquet justo. Nulla sed auctor dui. Duis ut orci vehicula, faucibus arcu mollis, ultrices erat. Duis fermentum velit tempus cursus lobortis. Sed vel convallis ligula. Phasellus molestie ultrices elit sed rutrum vitae ligula volutpat, sollicitudin sollicitudin lorem suscipit tincidunt in ligula eu, adipiscing blandit nisi maecenas</p>
+                <div class="name_serv">Do I have a package bank account?</div>
+                <p class="about_text">Package bank accounts are special accounts that have a fee associated with them. For this fee you receive a number of services, these could be any or all of the following:</p>
+
+                <p class="marg25">
+                    <div class="accordion">
+                        <section id="one">
+                            <span><a href="#one">Insurance Products</a></span>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </section>
+                        <section id="two">
+                            <span><a href="#two">Lifestyle Products</a></span>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </section>
+                        <section id="three">
+                            <span><a href="#three">Preferential Access to Financial Services</a></span>
+                            <div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                        </section>
+                    </div>
+                </p>
+
+                <p class="about_text">Although these benefits seem excellent on face value, far too many consumers have discovered they have been paying for something they are unable to claim for.</p>
+
             </div>
         </div>
     </div>
