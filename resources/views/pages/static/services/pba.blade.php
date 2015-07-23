@@ -28,7 +28,7 @@
                     <div class="accordion">
                         <section id="one">
                             <span><a href="#one">Insurance Products</a></span>
-                            <div>
+                            <div style="display:block;">
                                 <p>Insurance products will include items such as Breakdown Insurance for your car, Travel Insurance, Mobile Phone Insurance and Gadget Cover.</p>
                             </div>
                         </section>
@@ -59,7 +59,7 @@
             <div class="col-lg-8 col-md-8">
                 <h3 class="title"><span>Were you miss-sold?</span></h3>
 
-                <p class="about_text">Choice Claims can assess your claim and advise if we believe you have been miss-sold a package bank account. Our team of experts know where the banks have cut corners or not advised you as they should have. Get in touch for us to start your claim. You may have been miss-sold for one or more of the following reasons.</p>
+                <p class="about_text">Choice Claims can assess your claim and advise if we believe you have been miss-sold a package bank account. Our team knows where the banks have cut corners or not advised you as they should have. Get in touch for us to start your claim. You may have been miss-sold for one or more of the following reasons.</p>
 
 
                 <div class="col-lg-6 marg25">
