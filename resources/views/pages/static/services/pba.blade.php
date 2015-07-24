@@ -1,6 +1,6 @@
 @extends('themes.' . $theme . '.master')
 
-@section('title', 'Page Title')
+@section('title', 'Package Bank Accounts')
 
 @section('content')
 
@@ -15,7 +15,7 @@
     </div>
 
 
-    <div class="container marg75">
+    <div class="container marg50">
         <div class="row">
             <div class="col-lg-6">
                 <img class="img-thumbnail" src="/assets/img/pba-benefits.png" alt="" >
@@ -27,7 +27,7 @@
                 <p class="marg25">
                     <div class="accordion">
                         <section id="one">
-                            <span><a href="#one">Insurance Products</a></span>
+                            <span class="active"><a href="#one">Insurance Products</a></span>
                             <div style="display:block;">
                                 <p>Insurance products will include items such as Breakdown Insurance for your car, Travel Insurance, Mobile Phone Insurance and Gadget Cover.</p>
                             </div>
@@ -54,7 +54,7 @@
     </div>
 
 
-    <div class="container marg75">
+    <div class="container marg50">
         <div class="row">
             <div class="col-lg-8 col-md-8">
                 <h3 class="title"><span>Were you miss-sold?</span></h3>
@@ -65,13 +65,13 @@
                 <div class="col-lg-6 marg25">
                     <div class="iconbox"><i class="fa fa-question-circle size_35"></i><br>
                         <div class="name_serv_icons">Informed of Upgrade?</div>
-                        <p class="text_serv">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit donec sed odio dui.</p>
+                        <p class="text_serv">In some cases standard accounts were upgraded to package bank accounts without knowledge of the consumer. If you did not agree to an upgrade this could be you.</p>
                     </div>
                 </div>
                 <div class="col-lg-6 marg25">
                     <div class="iconbox"><i class="fa fa-file-text size_35"></i><br>
                         <div class="name_serv_icons">Conditions of Claiming?</div>
-                        <p class="text_serv">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit donec sed odio dui.</p>
+                        <p class="text_serv">Especially in the case of Insurances there are often specific eligibility criteria a consumer has to meet. For example travel insurance usually has an age limit. Were you informed of these criteria?</p>
                     </div>
                 </div>
                 <div class="col-lg-6 marg25">
@@ -83,13 +83,13 @@
                 <div class="col-lg-6 marg25">
                     <div class="iconbox"><i class="fa fa-check-square size_35"></i><br>
                         <div class="name_serv_icons">Registration of Items?</div>
-                        <p class="text_serv">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit donec sed odio dui.</p>
+                        <p class="text_serv">In the case of gadget and phone insurance consumers have to register individual items to qualify for the insurance. Without doing this you would not have been covered, were you aware?</p>
                     </div>
                 </div>
                 <div class="col-lg-6 marg25">
                     <div class="iconbox"><i class="fa fa-forward size_35"></i><br>
                         <div class="name_serv_icons">Approved for Finance?</div>
-                        <p class="text_serv">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit donec sed odio dui.</p>
+                        <p class="text_serv">Banks are not allowed to imply that a Package Bank Account could improve or guarantee your chance of getting Finance. If this was a reason you upgraded then you could have been miss-sold.</p>
                     </div>
                 </div>
             </div>
