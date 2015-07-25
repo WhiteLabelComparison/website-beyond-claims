@@ -1,26 +1,42 @@
 <?php
 
 
-Route::get('', 'StaticPageController@index');
+$comingSoon = true;
+$isLocal = $this->app->environment() == 'local' ? true : false;
 
-// Hide the about us page for now
-// Route::get('about-us', 'StaticPageController@about');
+// See if the website is in coming soon mode.
+// If so, we just display a coming soon page.
+if ($comingSoon && !$isLocal)
+{
+    // Catch all URLS and point them to the welcome page
+    Route::any( '{catchall}', function ( $page ) {
+        return view('welcome');
+    } )->where('catchall', '(.*)');
+} else {
+    // Lets do the normal route finding
 
-Route::group(['prefix' => 'our-services'], function(Illuminate\Routing\Router $route) {
-    $route->get('', 'StaticPageController@services');
+    Route::get('', 'StaticPageController@index');
 
-    $route->get('pba', 'StaticPageController@servicesPba');
-    $route->get('package-bank-accounts', 'StaticPageController@servicesPba');
+    // Hide the about us page for now
+    // Route::get('about-us', 'StaticPageController@about');
 
-    $route->get('ppi', 'StaticPageController@servicesPpi');
-    $route->get('payment-protection-insurance', 'StaticPageController@servicesPpi');
+    Route::group(['prefix' => 'our-services'], function (Illuminate\Routing\Router $route) {
+        $route->get('', 'StaticPageController@services');
 
-    $route->get('ppi-redress', 'StaticPageController@servicesPpiRedress');
-    $route->get('payment-protection-insurance-redress', 'StaticPageController@servicesPpiRedress');
-});
+        $route->get('pba', 'StaticPageController@servicesPba');
+        $route->get('package-bank-accounts', 'StaticPageController@servicesPba');
 
-Route::group(['prefix' => 'won-what-now'], function(Illuminate\Routing\Router $route) {
-    $route->get('', 'StaticPageController@pay');
-});
+        $route->get('ppi', 'StaticPageController@servicesPpi');
+        $route->get('payment-protection-insurance', 'StaticPageController@servicesPpi');
 
-Route::get('contact-us', 'StaticPageController@contact');
+        $route->get('ppi-redress', 'StaticPageController@servicesPpiRedress');
+        $route->get('payment-protection-insurance-redress', 'StaticPageController@servicesPpiRedress');
+    });
+
+    Route::group(['prefix' => 'won-what-now'], function (Illuminate\Routing\Router $route) {
+        $route->get('', 'StaticPageController@pay');
+    });
+
+    Route::get('contact-us', 'StaticPageController@contact');
+
+}
