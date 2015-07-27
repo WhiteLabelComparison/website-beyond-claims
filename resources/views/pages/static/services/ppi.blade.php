@@ -1,6 +1,6 @@
 @extends('themes.' . $theme . '.master')
 
-@section('title', 'Package Bank Accounts')
+@section('title', 'Payment Protection Insurance')
 
 @section('content')
 
@@ -8,7 +8,7 @@
         <div class="row">
             <div class="col-lg-12">
                 <div class="welcome">
-                    <div class="page-name pull-left"><h3>Package Bank Accounts</h3></div>
+                    <div class="page-name pull-left"><h3>Payment Protection Insurance</h3></div>
                 </div>
             </div>
         </div>
@@ -21,30 +21,32 @@
                 <img class="img-thumbnail" src="/assets/img/pba-benefits.png" alt="" >
             </div>
             <div class="col-lg-6">
-                <div class="name_serv">Do I have a package bank account?</div>
-                <p class="about_text">Package bank accounts are special accounts that have a fee associated with them. For this fee you receive a number of services, these could be any or all of the following:</p>
+                <div class="name_serv">What is Payment Protection Insurance?</div>
+                <p class="about_text">
+                    Payment Protection Insurance, or sometimes called 'loan protection' is an added charge on your monthly payments. It can be applied to Credit Cards, Loans and Mortgages and can also be purchased as a separate 'stand alone' policy.
+                </p>
 
                 <p class="marg25">
-                    <div class="accordion">
-                        <section id="one">
-                            <span class="active"><a href="#one">Insurance Products</a></span>
-                            <div style="display:block;">
-                                <p>Insurance products will include items such as Breakdown Insurance for your car, Travel Insurance, Mobile Phone Insurance and Gadget Cover.</p>
-                            </div>
-                        </section>
-                        <section id="two">
-                            <span><a href="#two">Lifestyle Products</a></span>
-                            <div>
-                                <p>Lifestyle products could include items such as Early access to special events such as concerts, Cinema Tickets and Magazine Subscriptions.</p>
-                            </div>
-                        </section>
-                        <section id="three">
-                            <span><a href="#three">Preferential Access to Financial Services</a></span>
-                            <div>
-                                <p>Some banks will give clients who purchase Package Bank Accounts lower interest rates, overdrafts and also Mortgages.</p>
-                            </div>
-                        </section>
-                    </div>
+                <div class="accordion">
+                    <section id="one">
+                        <span class="active"><a href="#one">Insurance Products</a></span>
+                        <div style="display:block;">
+                            <p>Insurance products will include items such as Breakdown Insurance for your car, Travel Insurance, Mobile Phone Insurance and Gadget Cover.</p>
+                        </div>
+                    </section>
+                    <section id="two">
+                        <span><a href="#two">Lifestyle Products</a></span>
+                        <div>
+                            <p>Lifestyle products could include items such as Early access to special events such as concerts, Cinema Tickets and Magazine Subscriptions.</p>
+                        </div>
+                    </section>
+                    <section id="three">
+                        <span><a href="#three">Preferential Access to Financial Services</a></span>
+                        <div>
+                            <p>Some banks will give clients who purchase Package Bank Accounts lower interest rates, overdrafts and also Mortgages.</p>
+                        </div>
+                    </section>
+                </div>
                 </p>
 
                 <p class="marg25">These benefits seem excellent on face value, however, far too many consumers have discovered they have been paying for something they are unable to claim for.</p>
