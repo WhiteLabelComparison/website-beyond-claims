@@ -2,6 +2,8 @@
 
 namespace ChoiceClaims\Http\Controllers;
 
+use Illuminate\Http\Request;
+
 class StaticPageController extends Controller {
 
     public function index()
