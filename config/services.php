@@ -31,8 +31,8 @@ return [
 
     'stripe' => [
         'model'  => ChoiceClaims\User::class,
-        'key'    => '',
-        'secret' => '',
+        'key'    => env('STRIPE_KEY'),
+        'secret' => env('STRIPE_SECRET'),
     ],
 
 ];

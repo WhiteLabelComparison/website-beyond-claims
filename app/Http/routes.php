@@ -35,6 +35,7 @@ if ($comingSoon && !$isLocal)
 
     Route::group(['prefix' => 'won-what-now'], function (Illuminate\Routing\Router $route) {
         $route->get('', 'StaticPageController@pay');
+        $route->post('process', 'StripeController@process');
     });
 
     Route::get('contact-us', 'StaticPageController@contact');
