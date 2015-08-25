@@ -1,7 +1,7 @@
 <?php
 
 
-$comingSoon = true;
+$comingSoon = env('COMING_SOON', true);
 $isLocal = $this->app->environment() == 'local' ? true : false;
 
 // See if the website is in coming soon mode.
