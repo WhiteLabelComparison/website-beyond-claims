@@ -21,9 +21,10 @@ class StripeController extends Controller
 
         Stripe::setApiKey(Config::get('services.stripe.secret'));
 
+        // THIS IS BAD - ASK ME WHY! - Simon :)
+        // $fee = intval($request->get('fee')) * 100;
 
-        $fee = intval($request->get('fee')) * 100;
-
+        $fee = $request->get('fee') * 100;
 
         try {
             $change = Charge::create([
