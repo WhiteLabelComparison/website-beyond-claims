@@ -1,6 +1,6 @@
 @extends('themes.' . $theme . '.master')
 
-@section('title', 'Page Title')
+@section('title', 'Contact Us - Get in Touch')
 
 @section('content')
 
