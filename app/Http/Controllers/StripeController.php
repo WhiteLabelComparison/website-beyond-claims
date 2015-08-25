@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Config;
 use Stripe\Charge;
 use Stripe\Error\Card;
 use Stripe\Stripe;
@@ -17,7 +18,8 @@ class StripeController extends Controller
      */
     public function process(Request $request)
     {
-        Stripe::setApiKey("sk_test_2N0CT7hC34CR0FgeEcau9H9I");
+
+        Stripe::setApiKey(Config::get('services.stripe.secret'));
 
 
         $fee = intval($request->get('fee')) * 100;

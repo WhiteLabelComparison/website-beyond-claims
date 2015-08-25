@@ -15,8 +15,7 @@
     <div class="container marg50">
         <div class="row">
             <div class="col-lg-12">
-                <h3 class="title"><span>Ok So now what?</span></h3>
-                <p class="about_text"> Asunt in anim uis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in anim id est laborum. Lamco laboris nisi ut aliquip ex ea commodo consequat. Aser velit esse cillum dolore eu fugiat nulla pariatur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente incidunt laboriosam accusamus fuga voluptatum iure nulla pariatur doloribus labore praesentium provident ipsa vitae ipsum quos sunt explicabo recusandae quis repellendus ducimus officia perferendis a ad illum eum minus voluptate odit non quidem reiciendis. Enim pariatur mollitia quae aliquam ipsam voluptas a numquam assumenda corporis fugiat adipisci optio quidem minima nesciunt quasi suscipit praesentium error voluptate magnam quia. Temporibus odio a accusantium adipisci ut possimus libero sint enim nam id eligendi nisi molestias dolorem. Inventore eius suscipit officia quisquam possimus quia cumque quidem atque impedit similique? Ea laudantium animi vero. </p>
+                <p class="about_text">First of all, we would like to congratulate you on your win</p>
             </div>
         </div>
         <div class="row marg50">
@@ -148,7 +147,7 @@
     <script type="text/javascript" src="/assets/js/jquery.payment.js"></script>
     <script type="text/javascript">
         $(function () {
-            Stripe.setPublishableKey('pk_test_VdnEoU1Qcz1EpGSRmJyX7amw');
+            Stripe.setPublishableKey('{{ config('services.stripe.key') }}');
 
             $('input.cc-number').payment('formatCardNumber');
             $('input.cc-expire').payment('formatCardExpiry');
