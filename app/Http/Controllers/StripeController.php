@@ -35,23 +35,12 @@ class StripeController extends Controller
 
             //@todo add some sort of logging or notification system
 
-            return response()->json($change);
+            return redirect('/payment-complete');
 
         } catch (Card $e) {
-            return response([
-                'error' => [
-                    'message' => $e->getMessage(),
-                    'type' => 'Card'
-                ]
-            ], 400);
-
+            return back()->withErrors([$e->getMessage()]);
         } catch (\Exception $e) {
-            return response([
-                'error' => [
-                    'message' => $e->getMessage(),
-                    'type' => 'General'
-                ]
-            ], 400);
+            return back()->withErrors([$e->getMessage()]);
         }
     }
 
