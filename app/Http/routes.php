@@ -31,6 +31,7 @@ if ($comingSoon && !$isLocal)
 
         $route->get('ppi-redress', 'StaticPageController@servicesPpiRedress');
         $route->get('payment-protection-insurance-redress', 'StaticPageController@servicesPpiRedress');
+
     });
 
     Route::group(['prefix' => 'won-what-now'], function (Illuminate\Routing\Router $route) {
@@ -38,6 +39,7 @@ if ($comingSoon && !$isLocal)
         $route->post('process', 'StripeController@process');
     });
 
+    Route::get('payment-complete', 'StaticPageController@paymentComplete');
     Route::get('contact-us', 'StaticPageController@contact');
 
 }

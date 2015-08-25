@@ -20,6 +20,7 @@
                         <div style="display:block">
                             <p>Firstly we would like to congratulate you on your win. Be it for a package bank account or payment protection insurance we are glad that you have managed to reclaim what you are due. Depending on the claim that you have been successful with will dictate if there is anything further for you to do before we close your case, these are shown below.</p>
                         </div>
+
                         <div class="">
                             <div class="accordion">
                                 <section id="two">
@@ -50,10 +51,15 @@
                 <p class="marg25">
                     To pay online, please fill in the following page. Please note your details are not stored and all payments are taken using our secure processing server.
                 </p>
+
                 <form action="/won-what-now/process" method="POST" id="payment-form">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                    <div class="payment-errors alert alert-danger fade"></div>
+                    @if ($errors->any())
+                    <div class="payment-errors alert alert-danger">
+                        <p><b>Error: </b> {{ $errors->first() }}</p>
+                    </div>
+                    @endif
 
                     <div class="row form-group">
                         <div class="col-md-6">

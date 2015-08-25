@@ -50,6 +50,11 @@ class StaticPageController extends Controller {
         return $this->showStaticPage('contact');
     }
 
+    public function paymentComplete()
+    {
+        return $this->showStaticPage('paymentcomplete');
+    }
+
 
     protected function showStaticPage($page)
     {
