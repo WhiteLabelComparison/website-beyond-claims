@@ -28,7 +28,7 @@
             <nav>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 pull-left"><div class="logo"><a href="index.html"><img src="/assets/img/logo.png" alt="" height="30" /></a></div></div>
+                        <div class="col-lg-3 pull-left"><div class="logo"><a href="/"><img src="/assets/img/logo.png" alt="" height="30" /></a></div></div>
                         <div class="col-lg-9 pull-right">
                             <div class="menu">
                                 <div id="dl-menu">

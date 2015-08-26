@@ -3,6 +3,8 @@
 namespace ChoiceClaims\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\Mail;
 
 class StaticPageController extends Controller {
 
@@ -48,6 +50,18 @@ class StaticPageController extends Controller {
     public function contact()
     {
         return $this->showStaticPage('contact');
+    }
+
+    public function contactPost()
+    {
+        Mail::raw($this->request->get('message'), function($message)
+        {
+            $message->from($this->request->get('email'), $this->request->get('name'));
+            $message->subject($this->request->get('subject'));
+            $message->to('info@choiceclaims.co.uk');
+        });
+
+        return back()->withErrors(['Thank you for your message, we will reply as soon as possible.']);
     }
 
     public function paymentComplete()

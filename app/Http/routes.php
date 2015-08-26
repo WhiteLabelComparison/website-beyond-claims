@@ -41,5 +41,6 @@ if ($comingSoon && !$isLocal)
 
     Route::get('payment-complete', 'StaticPageController@paymentComplete');
     Route::get('contact-us', 'StaticPageController@contact');
+    Route::post('contact-us-send', 'StaticPageController@contactPost');
 
 }

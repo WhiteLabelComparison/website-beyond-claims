@@ -25,7 +25,14 @@
             <div class="col-lg-8">
                 <h3 class="title"><span>Contact Form</span></h3>
                 <p class="about_text" style="color:#777;"><i>If you can't find the answer to your question on our website, or you'd just like to ask us to call you back then please enter your details in the form below. We will get back in touch with you as soon as possible.</i></p>
-                <form action="assets/php/send.php" method="post" id="contactForm">
+
+                @if ($errors->any())
+                    <div class="payment-errors alert alert-success">
+                        <p>{{ $errors->first() }}</p>
+                    </div>
+                @endif
+
+                <form action="/contact-us-send" method="post" id="contactForm">
               <span class="input">
                 <p class="contact-width"><input type="text" name="name" placeholder="Your name" class="form-control contact-width" size="40"></p>
                 <div class="alert alert-danger error" id="nameError"><i class="fa fa-times"></i> Oh snap! This field can't stay empty.</div>
