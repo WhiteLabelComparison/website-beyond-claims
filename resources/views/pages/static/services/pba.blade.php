@@ -115,7 +115,7 @@
 
                 <div class="col-lg-12 marg25">
                     <div class="iconbox"><i class="fa fa-smile-o size_35"></i><br>
-                        <div class="name_serv_icons">Step 2</div>
+                        <div class="name_serv_icons">Step 3</div>
                         <p class="text_serv">Once we have managed to secure a settlement for you we will arrange for the bank to make payment to you. We will then invoice you our fee.</p>
                     </div>
                 </div>

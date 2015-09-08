@@ -10,7 +10,40 @@ class StaticPageController extends Controller {
 
     public function index()
     {
-        return $this->showStaticPage('index');
+        $data = [
+            'attractions' => [
+                [
+                    'image' => [
+                        'url' => '/assets/images/carousel/coffee.jpg',
+                        'alt' => 'Coffee Table',
+                    ],
+                    'description' => 'Apply from the conform of your own home',
+                ],
+                [
+                    'image' => [
+                        'url' => '/assets/images/carousel/dog.jpg',
+                        'alt' => 'husky',
+                    ],
+                    'description' => 'Nothing to loose',
+                ],
+                [
+                    'image' => [
+                        'url' => '/assets/images/carousel/group.jpg',
+                        'alt' => 'Group of Friends',
+                    ],
+                    'description' => 'Spend more time doing the thinks you love',
+                ],
+                [
+                    'image' => [
+                        'url' => '/assets/images/carousel/train.jpg',
+                        'alt' => 'Phone Call',
+                    ],
+                    'description' => 'Quick, easy and hassle free',
+                ],
+            ]
+        ];
+
+        return $this->showStaticPage('index', $data);
     }
 
     public function about()
@@ -70,11 +103,11 @@ class StaticPageController extends Controller {
     }
 
 
-    protected function showStaticPage($page)
+    protected function showStaticPage($page, Array $data = [])
     {
         return view('pages.static.' . $page, [
             'menuItem' => $page,
-        ]);
+        ], $data);
     }
 
 }
