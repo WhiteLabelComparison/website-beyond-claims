@@ -57,7 +57,7 @@
             <div class="col-lg-4">
                 <h3 class="title"><span>Information</span></h3>
                 <p class="adress_cont">
-                    <i class="fa fa-building-o icon_foot"></i> Address: Unit 8 Quay Reach, Caroline Way, Salford, M50 2ZY.<br>
+                    <i class="fa fa-building-o icon_foot"></i> Address: Unit 8 Quay Reach, Carolina Way, Salford, M50 2ZY.<br>
                     <i class="fa fa-phone icon_foot"></i> Phone: 0161 396 0396<br>
                     <i class="fa fa-envelope icon_foot"></i>  Email: <a href="mailto:info@choiceclaims.co.uk" target="_blank" class="colorend">info@choiceclaims.co.uk</a>
                 </p>
