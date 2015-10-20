@@ -1,7 +1,7 @@
 <?php
 
 
-$comingSoon = true;
+$comingSoon = env('COMING_SOON', true);
 $isLocal = $this->app->environment() == 'local' ? true : false;
 
 // See if the website is in coming soon mode.
@@ -31,6 +31,7 @@ if ($comingSoon && !$isLocal)
 
         $route->get('ppi-redress', 'StaticPageController@servicesPpiRedress');
         $route->get('payment-protection-insurance-redress', 'StaticPageController@servicesPpiRedress');
+
     });
 
     Route::group(['prefix' => 'won-what-now'], function (Illuminate\Routing\Router $route) {
@@ -38,6 +39,8 @@ if ($comingSoon && !$isLocal)
         $route->post('process', 'StripeController@process');
     });
 
+    Route::get('payment-complete', 'StaticPageController@paymentComplete');
     Route::get('contact-us', 'StaticPageController@contact');
+    Route::post('contact-us-send', 'StaticPageController@contactPost');
 
 }

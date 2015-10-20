@@ -21,9 +21,10 @@ class StripeController extends Controller
 
         Stripe::setApiKey(Config::get('services.stripe.secret'));
 
+        // THIS IS BAD - ASK ME WHY! - Simon :)
+        // $fee = intval($request->get('fee')) * 100;
 
-        $fee = intval($request->get('fee')) * 100;
-
+        $fee = $request->get('fee') * 100;
 
         try {
             $change = Charge::create([
@@ -35,23 +36,12 @@ class StripeController extends Controller
 
             //@todo add some sort of logging or notification system
 
-            return response()->json($change);
+            return redirect('/payment-complete');
 
         } catch (Card $e) {
-            return response([
-                'error' => [
-                    'message' => $e->getMessage(),
-                    'type' => 'Card'
-                ]
-            ], 400);
-
+            return back()->withErrors([$e->getMessage()]);
         } catch (\Exception $e) {
-            return response([
-                'error' => [
-                    'message' => $e->getMessage(),
-                    'type' => 'General'
-                ]
-            ], 400);
+            return back()->withErrors([$e->getMessage()]);
         }
     }
 

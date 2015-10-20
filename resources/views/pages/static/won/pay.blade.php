@@ -1,6 +1,6 @@
 @extends('themes.' . $theme . '.master')
 
-@section('title', 'Page Title')
+@section('title', 'What happens now you have won?')
 
 @section('content')
     <div class="container">
@@ -14,54 +14,32 @@
     </div>
     <div class="container marg50">
         <div class="row">
-            <div class="col-lg-12">
-                <p class="about_text">First of all, we would like to congratulate you on your win</p>
-            </div>
-        </div>
-        <div class="row marg50">
             <div class="col-lg-9">
                 <div class="row">
                     <div class="col-lg-12">
+                        <div style="display:block">
+                            <p>Firstly we would like to congratulate you on your win. Be it for a package bank account or payment protection insurance we are glad that you have managed to reclaim what you are due. Depending on the claim that you have been successful with will dictate if there is anything further for you to do before we close your case, these are shown below.</p>
+                        </div>
+
                         <div class="">
                             <div class="accordion">
-                                <section id="one">
-                                    <span class="active"> <a href="#one">Helpful Resources for Authors</a></span>
-                                    <div style="display:block">
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente incidunt laboriosam accusamus fuga voluptatum iure nulla pariatur doloribus labore praesentium provident ipsa vitae ipsum quos sunt explicabo recusandae quis repellendus ducimus officia perferendis a ad illum eum minus voluptate odit non quidem reiciendis. Enim pariatur mollitia quae aliquam ipsam voluptas a numquam assumenda corporis fugiat adipisci optio quidem minima nesciunt quasi suscipit praesentium error voluptate magnam quia. Temporibus odio a accusantium adipisci ut possimus libero sint enim nam id eligendi nisi molestias dolorem. Inventore eius suscipit officia quisquam possimus quia cumque quidem atque impedit similique? Ea laudantium animi vero.</p>
-                                    </div>
-                                </section>
                                 <section id="two">
-                                    <span><a href="#two">How much money can I make?</a></span>
-                                    <div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente incidunt laboriosam accusamus fuga voluptatum iure nulla pariatur doloribus labore praesentium provident ipsa vitae ipsum quos sunt explicabo recusandae quis repellendus ducimus officia perferendis a ad illum eum minus voluptate odit non quidem reiciendis. Enim pariatur mollitia quae aliquam ipsam voluptas a numquam assumenda corporis fugiat adipisci optio quidem minima nesciunt quasi suscipit praesentium error voluptate magnam quia. Temporibus odio a accusantium adipisci ut possimus libero sint enim nam id eligendi nisi molestias dolorem. Inventore eius suscipit officia quisquam possimus quia cumque quidem atque impedit similique? Ea laudantium animi vero. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente incidunt laboriosam accusamus fuga voluptatum iure nulla pariatur doloribus labore praesentium provident ipsa vitae ipsum quos sunt explicabo recusandae quis repellendus ducimus officia perferendis a ad illum eum minus voluptate odit non quidem reiciendis. Enim pariatur mollitia quae aliquam ipsam voluptas a numquam assumenda corporis fugiat adipisci optio quidem minima nesciunt quasi suscipit praesentium error voluptate magnam quia. Temporibus odio a accusantium adipisci ut possimus libero sint enim nam id eligendi nisi molestias dolorem. Inventore eius suscipit officia quisquam possimus quia cumque quidem atque impedit similique? Ea laudantium animi vero.</p>
+                                    <span class="active"><a href="#two">Payment Protection Insurance</a></span>
+                                    <div style="display:block;">
+                                        <p>If you have had a win from a Payment Protection Insurance claim then we will have sent you a letter detailing the full details of the refund that you have received. The company you purchased PPI from will have refunded the money directly to us, once our standard fee has been taken we will directly bank transfer the win to your account. From this point your case will be closed and there will be nothing further we would require from you.</p>
                                     </div>
                                 </section>
                                 <section id="three">
-                                    <span><a href="#three">How do I become an author?</a></span>
+                                    <span><a href="#three">Package Bank Account</a></span>
                                     <div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente incidunt laboriosam accusamus fuga voluptatum iure nulla pariatur doloribus labore praesentium provident ipsa vitae ipsum quos sunt explicabo recusandae quis repellendus ducimus officia perferendis a ad illum eum minus voluptate odit non quidem reiciendis. Enim pariatur mollitia quae aliquam ipsam voluptas a numquam assumenda corporis fugiat adipisci optio quidem minima nesciunt quasi suscipit praesentium error voluptate magnam quia. Temporibus odio a accusantium adipisci ut possimus libero sint enim nam id eligendi nisi molestias dolorem. Inventore eius suscipit officia quisquam possimus quia cumque quidem atque impedit similique? Ea laudantium animi vero.</p>
-                                    </div>
-                                </section>
-                                <section id="four">
-                                    <span><a href="#four">An Introduction to the Marketplaces for Authors</a></span>
-                                    <div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente incidunt laboriosam accusamus fuga voluptatum iure nulla pariatur doloribus labore praesentium provident ipsa vitae ipsum quos sunt explicabo recusandae quis repellendus ducimus officia perferendis a ad illum eum minus voluptate odit non quidem reiciendis. Enim pariatur mollitia quae aliquam ipsam voluptas a numquam assumenda corporis fugiat adipisci optio quidem minima nesciunt quasi suscipit praesentium error voluptate magnam quia. Temporibus odio a accusantium adipisci ut possimus libero sint enim nam id eligendi nisi molestias dolorem. Inventore eius suscipit officia quisquam possimus quia cumque quidem atque impedit similique? Ea laudantium animi vero.</p>
-                                    </div>
-                                </section>
-                                <section id="five">
-                                    <span><a href="#five">How does the Tuts+ Premium affiliate program work?</a></span>
-                                    <div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente incidunt laboriosam accusamus fuga voluptatum iure nulla pariatur doloribus labore praesentium provident ipsa vitae ipsum quos sunt explicabo recusandae quis repellendus ducimus officia perferendis a ad illum eum minus voluptate odit non quidem reiciendis. Enim pariatur mollitia quae aliquam ipsam voluptas a numquam assumenda corporis fugiat adipisci optio quidem minima nesciunt quasi suscipit praesentium error voluptate magnam quia. Temporibus odio a accusantium adipisci ut possimus libero sint enim nam id eligendi nisi molestias dolorem. Inventore eius suscipit officia quisquam possimus quia cumque quidem atque impedit similique? Ea laudantium animi vero.</p>
-                                    </div>
-                                </section>
-                                <section id="six">
-                                    <span><a href="#six">How do I pay for items on the Marketplaces?</a></span>
-                                    <div>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ut sapiente incidunt laboriosam accusamus fuga voluptatum iure nulla pariatur doloribus labore praesentium provident ipsa vitae ipsum quos sunt explicabo recusandae quis repellendus ducimus officia perferendis a ad illum eum minus voluptate odit non quidem reiciendis. Enim pariatur mollitia quae aliquam ipsam voluptas a numquam assumenda corporis fugiat adipisci optio quidem minima nesciunt quasi suscipit praesentium error voluptate magnam quia. Temporibus odio a accusantium adipisci ut possimus libero sint enim nam id eligendi nisi molestias dolorem. Inventore eius suscipit officia quisquam possimus quia cumque quidem atque impedit similique? Ea laudantium animi vero.</p>
+                                        <p>If you have had a win from a Package Bank Account then your win would have been directly credited to your account by the bank. In this case we will send you an invoice for our standard fee along with a copy of your win letter. This fee will now be payable and can be done over the phone by calling us on 0161 396 0396, alternatively you can use the 'Pay Now' section on the right which will securely take your payment online and automatically close your case.</p>
                                     </div>
                                 </section>
                             </div>
                         </div>
+                        <p>
+                            If you were happy with our service then we would love it if you would send us a testimonial. You will have received a form alongside your win letter to fill in and send back to us, however, if you would like to do this online please visit our <a href="/contact-us">contact page</a>.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -71,17 +49,17 @@
                 </div>
 
                 <p class="marg25">
-                    So you've had a win, great you can now pay by one of the following methods
-                    <ul class="categories">
-                        <li><a href="#">Online</a></li>
-                        <li><a href="#">Telephone</a></li>
-                        <li><a href="#">Bank Transfer</a></li>
-                    </ul>
+                    To pay online, please fill in the following page. Please note your details are not stored and all payments are taken using our secure processing server.
                 </p>
+
                 <form action="/won-what-now/process" method="POST" id="payment-form">
                     <input type="hidden" name="_token" value="{{ csrf_token() }}">
 
-                    <div class="payment-errors alert alert-danger fade"></div>
+                    @if ($errors->any())
+                    <div class="payment-errors alert alert-danger">
+                        <p><b>Error: </b> {{ $errors->first() }}</p>
+                    </div>
+                    @endif
 
                     <div class="row form-group">
                         <div class="col-md-6">

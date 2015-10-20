@@ -28,7 +28,7 @@
             <nav>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 pull-left"><div class="logo"><a href="index.html"><img src="/assets/img/logo.png" alt="" height="30" /></a></div></div>
+                        <div class="col-lg-3 pull-left"><div class="logo"><a href="/"><img src="/assets/img/logo.png" alt="" height="30" /></a></div></div>
                         <div class="col-lg-9 pull-right">
                             <div class="menu">
                                 <div id="dl-menu">
@@ -40,7 +40,7 @@
                                             <ul class="dl-submenu">
                                                 <li><a href="/our-services/package-bank-accounts">Package Bank Accounts</a></li>
                                                 <li><a href="/our-services/payment-protection-insurance">Payment Protection Insurance</a></li>
-                                                <li><a href="/our-services/payment-protection-insurance-redress">PPI Redress</a></li>
+                                                <!-- <li><a href="/our-services/payment-protection-insurance-redress">PPI Redress</a></li> -->
                                             </ul>
                                         </li>
                                         <li><a href="/won-what-now" data-description="What to do next">Won?</a></li>
@@ -65,15 +65,7 @@
     <div class="twitter_fot marg50">
         <div class="container ">
             <div class="row">
-                <div class="col-lg-11 col-md-10">
-                    <div class="tweet"></div>
-                </div>
-                <div class="col-lg-1  col-md-2 hidden-pag">
-                    <div class="paginat">
-                        <a id="prev"><i class="fa fa-arrow-left"></i></a>
-                        <a id="next"><i class="fa fa-arrow-right"></i></a>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -81,7 +73,7 @@
     <div class="footer">
         <div class="container ">
             <div class="row">
-                <div class="col-lg-4 col-md-4">
+                <div class="col-lg-5 col-md-5">
                     <div class="footer-block">Choice Claims</div>
                     <div class="foot-text">
                         <p>Choice Claims is a trading style of CDW Bureau Ltd (Company No. 07960985).</p>
@@ -89,23 +81,11 @@
                         <p>ICO Reg No. ZA076747.</p>
                     </div>
                 </div>
-                <div class="col-lg-5 col-md-5">
-                    <div class="footer-block">Tags</div>
-                    <div class="tag_cloud">
-                        <a href="#">HTML 5</a>
-                        <a href="#">CSS 3</a>
-                        <a href="#">WordPress</a>
-                        <a href="#">ThemeForest</a>
-                        <a href="#">PHP</a>
-                        <a href="#">Code</a>
-                        <a href="#">Ajax</a>
-                        <a href="#">JavaScript</a>
-                        <a href="#">PhotoShop</a>
-                        <a href="#">jQuery</a>
-                    </div>
+                <div class="col-lg-2 col-md-2">
+
                 </div>
 
-                <div class="col-lg-3 col-md-3">
+                <div class="col-lg-5 col-md-5">
                     <div class="footer-block">Contact info</div>
                     <ul class="contacts images_bg">
                         <li class="address">Unit 8 Quay Reach, Caroline Way, Salford, M50 2ZY.</li>
@@ -116,26 +96,7 @@
             </div>
         </div>
     </div>
-    <div class="footer_bottom">
-        <div class="container ">
-            <div class="row">
-                <div class="col-lg-6 col-md-6 col-ms-6 pull-left col-ms-12">
-                    <div class="copyright"></div>
-                </div>
-                <div class="col-lg-6 col-md-6 col-ms-6 pull-right col-ms-12">
-                    <div class="foot_menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="portfolio_3.html">Portfolio</a></li>
-                            <li><a href="blog_medium_right.html">The Blog</a></li>
-                            <li><a href="accordion.html">Shortcodes</a></li>
-                            <li><a href="http://themeforest.net/item/grandway-responsive-html5css3-template/4723385" target="_blank">Purchase</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
 </div>
 <script type="text/javascript" src="/assets/rs-plugin/js/jquery.themepunch.plugins.min.js"></script>
 <script type="text/javascript" src="/assets/rs-plugin/js/jquery.themepunch.revolution.min.js"></script>

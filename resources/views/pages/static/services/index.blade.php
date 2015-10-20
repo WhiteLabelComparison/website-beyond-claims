@@ -1,6 +1,6 @@
 @extends('themes.' . $theme . '.master')
 
-@section('title', 'Package Bank Accounts')
+@section('title', 'Our Services')
 
 @section('content')
     <div class="container">
@@ -47,12 +47,6 @@
 
                     <p class="read"><a href="/our-services/payment-protection-insurance-redress">Read More →</a></p>
                 </div>
-            </div>
-        </div>
-        <div class="row marg25">
-            <div class="col-lg-12">
-                <p>Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim. Praesent sodales ullamcorper felis, eget rutrum nisi dignissim vel. Nulla non fringilla metus, in tincidunt lacus aenean scelerisque. Nterdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempo. Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl.</p>
-                <blockquote class="marg25">Mauris aliquet ultricies ante, non faucibus ante gravida sed. Sed ultrices pellentesque purus, vulputate volutpat ipsum hendrerit sed neque sed sapien rutrum laoreet justo ultrices. In pellentesque  lorem condimentum dui morbi pulvinar dui non quam pretium ut lacinia tortor. Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor. Nam erat felis, commodo sed semper commodo vel mauris suspendisse dignissim. Maecenas dolor est, interdum a euismod eu, accumsan posuere nisl. Nam sed iaculis massa. Sed nisl lectus, tempor sed euismod quis, sollicitudin nec est. Suspendisse dignissim bibendum tempor.</blockquote>
             </div>
         </div>
     </div>
