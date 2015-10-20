@@ -16,7 +16,7 @@
     <div class="container marg75">
         <div class="row">
             <div class="col-lg-12">
-                <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.ru/?ie=UTF8&amp;ll=53.5806849,-2.4520483&amp;spn=0.006967,0.016512&amp;t=m&amp;z=16&amp;output=embed"></iframe>
+                <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.ru/?ie=UTF8&amp;ll=53.4800295,-2.2962176&amp;spn=0.006967,0.016512&amp;t=m&amp;z=16&amp;output=embed"></iframe>
             </div>
         </div>
     </div>
@@ -50,7 +50,7 @@
             <div class="col-lg-4">
                 <h3 class="title"><span>Information</span></h3>
                 <p class="adress_cont">
-                    <i class="fa fa-building-o icon_foot"></i> Address: Hamill House, 112-116 Chorley New Road, Bolton, BL1 4DH<br>
+                    <i class="fa fa-building-o icon_foot"></i> Address: Unit 8 Quay Reach, Caroline Way, Salford, M50 2ZY.<br>
                     <i class="fa fa-phone icon_foot"></i> Phone: 0161 396 0396<br>
                     <i class="fa fa-envelope icon_foot"></i>  Email: <a href="mailto:info@choiceclaims.co.uk" target="_blank" class="colorend">info@choiceclaims.co.uk</a>
                 </p>

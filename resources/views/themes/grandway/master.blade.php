@@ -108,7 +108,7 @@
                 <div class="col-lg-3 col-md-3">
                     <div class="footer-block">Contact info</div>
                     <ul class="contacts images_bg">
-                        <li class="address">Hamill House, 112-116 Chorley New Road, Bolton, BL1 4DH</li>
+                        <li class="address">Unit 8 Quay Reach, Caroline Way, Salford, M50 2ZY.</li>
                         <li class="phone">Phone:  <a href="#">0161 396 0396</a></li>
                         <li class="email">E-Mail: <a href="mailto:info@choiceclaims.co.uk">info@choiceclaims.co.uk</a></li>
                     </ul>
