@@ -16,7 +16,7 @@
     <div class="container marg75">
         <div class="row">
             <div class="col-lg-12">
-                <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.ru/?ie=UTF8&amp;ll=53.4800295,-2.2962176&amp;spn=0.006967,0.016512&amp;t=m&amp;z=16&amp;output=embed"></iframe>
+                <iframe width="100%" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ru/?ie=UTF8&amp;ll=53.4800295,-2.2962176&amp;spn=0.006967,0.016512&amp;t=m&amp;z=16&amp;output=embed"></iframe>
             </div>
         </div>
     </div>
