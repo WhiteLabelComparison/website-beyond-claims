@@ -104,7 +104,7 @@
 
                 <div class="col-lg-12 marg25">
                     <div class="iconbox"><i class="fa fa-smile-o size_35"></i><br>
-                        <div class="name_serv_icons">Step 2</div>
+                        <div class="name_serv_icons">Step 3</div>
                         <p class="text_serv">Once we have managed to secure a settlement for you it will be paid to us, we will then pass on that settlement to you minus our standard fee.</p>
                     </div>
                 </div>

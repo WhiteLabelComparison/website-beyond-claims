@@ -4,8 +4,41 @@
 
 @section('content')
 
-    <div class="container marg75">
-        <div class="row">
+    <div class="container">
+        <div class="row marg10">
+            <div id="carousel-example-generic" class="carousel slide well" data-ride="carousel" style="height-min: 320px">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    @foreach($attractions  as $index => $value)
+                    <li data-target="#carousel-example-generic" data-slide-to="{{ $index }}" class="{{ $index == 0?'active':'' }}"></li>
+                    @endforeach
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    @foreach($attractions as $index => $attraction)
+                    <div class="item {{ $index == 0?'active':'' }}" style="background-image: url('{{ $attraction['image']['url'] }}');background-size:cover;min-height: 320px">
+                        <!--<img src="{{ $attraction['image']['url'] }}" alt="{{ $attraction['image']['alt'] }}" style="background-size: cover">-->
+                        <div class="carousel-caption">
+                            {{  $attraction['description'] }}
+                        </div>
+                    </div>
+                    @endforeach
+                </div>
+
+                <!--
+                <a class="left carousel-control" href="#" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+                -->
+            </div>
+        </div>
+        <div class="row marg25">
             <div class="col-lg-4 col-md-4 col-xs-4 col-ms-4">
                 <div class="iconbox"><span class="iconbox-cash"></span><br>
                     <h3>Package Bank Account</h3>
