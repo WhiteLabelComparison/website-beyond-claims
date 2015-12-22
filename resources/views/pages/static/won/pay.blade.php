@@ -26,13 +26,13 @@
                                 <section id="two">
                                     <span class="active"><a href="#two">Payment Protection Insurance</a></span>
                                     <div style="display:block;">
-                                        <p>If you have had a win from a Payment Protection Insurance claim then we will have sent you a letter detailing the full details of the refund that you have received. The company you purchased PPI from will have refunded the money directly to us, once our standard fee has been taken we will directly bank transfer the win to your account. From this point your case will be closed and there will be nothing further we would require from you.</p>
+                                        <p>If you have had a win from a Payment Protection Insurance claim then we will have sent you a letter detailing the full details of the refund that you have received. The company you purchased PPI from will have refunded the money directly to your bank account. In this case we will send you an invoice for our standard fee along with a copy of your win letter. This fee will now be payable and can be done over the phone by calling us on 0161 241 4650, alternatively you can use the 'Pay Now' section on the right which will securely take your payment online and automatically close your case.</p>
                                     </div>
                                 </section>
                                 <section id="three">
                                     <span><a href="#three">Package Bank Account</a></span>
                                     <div>
-                                        <p>If you have had a win from a Package Bank Account then your win would have been directly credited to your account by the bank. In this case we will send you an invoice for our standard fee along with a copy of your win letter. This fee will now be payable and can be done over the phone by calling us on 0161 396 0396, alternatively you can use the 'Pay Now' section on the right which will securely take your payment online and automatically close your case.</p>
+                                        <p>If you have had a win from a Package Bank Account then your win would have been directly credited to your account by the bank. In this case we will send you an invoice for our standard fee along with a copy of your win letter. This fee will now be payable and can be done over the phone by calling us on 0161 241 4650, alternatively you can use the 'Pay Now' section on the right which will securely take your payment online and automatically close your case.</p>
                                     </div>
                                 </section>
                             </div>

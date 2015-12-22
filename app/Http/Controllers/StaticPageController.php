@@ -17,21 +17,21 @@ class StaticPageController extends Controller {
                         'url' => '/assets/images/carousel/coffee.jpg',
                         'alt' => 'Coffee Table',
                     ],
-                    'description' => 'Apply from the conform of your own home',
+                    'description' => 'Apply from the comfort of your own home',
                 ],
                 [
                     'image' => [
                         'url' => '/assets/images/carousel/dog.jpg',
                         'alt' => 'husky',
                     ],
-                    'description' => 'Nothing to loose',
+                    'description' => 'There is nothing to loose, and plenty to gain',
                 ],
                 [
                     'image' => [
                         'url' => '/assets/images/carousel/group.jpg',
                         'alt' => 'Group of Friends',
                     ],
-                    'description' => 'Spend more time doing the thinks you love',
+                    'description' => 'Spend more time doing the things you love',
                 ],
                 [
                     'image' => [

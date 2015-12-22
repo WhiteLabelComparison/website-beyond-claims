@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
-    <title>@yield('title') - Choice Claims - choiceclaims.co.uk</title>
+    <title>@yield('title') - Beyond Comparison Claims - beyondcomparisonclaims.co.uk</title>
     <meta content="" name="description">
     <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport"/>
     <link href="/assets/images/favicon.ico" rel="shortcut icon"/>
@@ -28,7 +28,7 @@
             <nav>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 pull-left"><div class="logo"><a href="/"><img src="/assets/img/logo.png" alt="" height="30" /></a></div></div>
+                        <div class="col-lg-3 pull-left"><div class="logo"><a href="/"><img src="/assets/img/logo.png" alt="" /></a></div></div>
                         <div class="col-lg-9 pull-right">
                             <div class="menu">
                                 <div id="dl-menu">
@@ -74,9 +74,9 @@
         <div class="container ">
             <div class="row">
                 <div class="col-lg-5 col-md-5">
-                    <div class="footer-block">Choice Claims</div>
+                    <div class="footer-block">Beyond Comparison Claims</div>
                     <div class="foot-text">
-                        <p>Choice Claims is a trading style of CDW Bureau Ltd (Company No. 07960985).</p>
+                        <p>Beyond Comparison Claims is a trading style of CDW Bureau Ltd (Company No. 07960985).</p>
                         <p>Regulated by the Claims Management Regulator in respect of regulated claims management activities, authorisation number CRM29686.</p>
                         <p>ICO Reg No. ZA076747.</p>
                     </div>
@@ -89,8 +89,8 @@
                     <div class="footer-block">Contact info</div>
                     <ul class="contacts images_bg">
                         <li class="address">Unit 8 Quay Reach, Carolina Way, Salford, M50 2ZY.</li>
-                        <li class="phone">Phone:  <a href="#">0161 396 0396</a></li>
-                        <li class="email">E-Mail: <a href="mailto:info@choiceclaims.co.uk">info@choiceclaims.co.uk</a></li>
+                        <li class="phone">Phone:  <a href="#">0161 241 4650</a></li>
+                        <li class="email">E-Mail: <a href="mailto:admin@beyondcomparison.co.uk">admin@beyondcomparison.co.uk</a></li>
                     </ul>
                 </div>
             </div>

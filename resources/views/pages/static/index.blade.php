@@ -64,31 +64,31 @@
     </div>
 
 
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 marg75" style="min-height: 200px;">
-                <h3 class="title"><span>Clients Testimonials</span></h3>
-                <div class="testimonialrotator skin_default marg25" id="tr1">
-                    <div class="testimonial" style="display:block">
-                        <div class="testtext">My experience was very positive and transparent. Choice Claims dealt with everything in a very professional and timely manner. I would not hesitate to recommend them, you have nothing to loose.</div>
-                        <div class="testauthor">Mrs Morna Metzger</div>
-                    </div>
-                    <div class="testimonial" style="display:none">
-                        <div class="testtext">Great service, signed the authorisation letter in January Nat West paid out by the end of February. Thank you for bringing this to my attention.</div>
-                        <div class="testauthor">Anonymous</div>
-                    </div>
-                    <div class="testimonial" style="display:none">
-                        <div class="testtext">I found the whole process very simple and hassle free. The staff I dealt with were very helpfull. I was so happy with the service I recommended them to my Fiance.</div>
-                        <div class="testauthor">Anonymous</div>
-                    </div>
-                    <div class="testimonial" style="display:none">
-                        <div class="testtext">Choice Claims were very thorough and processed my claim with the minimum amount of interaction from me. The process was very quick and painless. Thank You.</div>
-                        <div class="testauthor">Anonymous</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    {{--<div class="container">--}}
+        {{--<div class="row">--}}
+            {{--<div class="col-lg-12 col-md-12 marg75" style="min-height: 200px;">--}}
+                {{--<h3 class="title"><span>Clients Testimonials</span></h3>--}}
+                {{--<div class="testimonialrotator skin_default marg25" id="tr1">--}}
+                    {{--<div class="testimonial" style="display:block">--}}
+                        {{--<div class="testtext">My experience was very positive and transparent. Choice Claims dealt with everything in a very professional and timely manner. I would not hesitate to recommend them, you have nothing to loose.</div>--}}
+                        {{--<div class="testauthor">Mrs Morna Metzger</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="testimonial" style="display:none">--}}
+                        {{--<div class="testtext">Great service, signed the authorisation letter in January Nat West paid out by the end of February. Thank you for bringing this to my attention.</div>--}}
+                        {{--<div class="testauthor">Anonymous</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="testimonial" style="display:none">--}}
+                        {{--<div class="testtext">I found the whole process very simple and hassle free. The staff I dealt with were very helpfull. I was so happy with the service I recommended them to my Fiance.</div>--}}
+                        {{--<div class="testauthor">Anonymous</div>--}}
+                    {{--</div>--}}
+                    {{--<div class="testimonial" style="display:none">--}}
+                        {{--<div class="testtext">Choice Claims were very thorough and processed my claim with the minimum amount of interaction from me. The process was very quick and painless. Thank You.</div>--}}
+                        {{--<div class="testauthor">Anonymous</div>--}}
+                    {{--</div>--}}
+                {{--</div>--}}
+            {{--</div>--}}
+        {{--</div>--}}
+    {{--</div>--}}
 
 
 
