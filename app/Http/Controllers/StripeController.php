@@ -35,8 +35,7 @@ class StripeController extends Controller
             ]);
 
             //@todo add some sort of logging or notification system
-
-            return redirect('/payment-complete');
+            return redirect('/payment-complete')->with('transaction', $change->balance_transaction);
 
         } catch (Card $e) {
             return back()->withErrors([$e->getMessage()]);

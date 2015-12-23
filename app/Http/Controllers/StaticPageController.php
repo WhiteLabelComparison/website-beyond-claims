@@ -135,7 +135,9 @@ class StaticPageController extends Controller {
 
     public function paymentComplete()
     {
-        return $this->showStaticPage('paymentcomplete');
+        return $this->showStaticPage('paymentcomplete', [
+            'transaction_id' => session('transaction'),
+        ]);
     }
 
 

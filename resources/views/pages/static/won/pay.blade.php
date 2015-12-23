@@ -116,8 +116,6 @@
     </div>
 </div>
 
-<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
-<script type="text/javascript" src="/assets/js/jquery.payment.js"></script>
 <script type="text/javascript">
     $(function () {
         Stripe.setPublishableKey('{{ config('services.stripe.key') }}');

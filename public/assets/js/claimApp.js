@@ -17,7 +17,11 @@ var AngularApplication = angular.module('ClaimApplication', ['ui.router'])
         }
     })
     .config(['$stateProvider', '$locationProvider', function ($stateProvider, $locationProvider) {
-        $locationProvider.html5Mode(true);
+        $locationProvider.html5Mode({
+            enabled: true,
+            requireBase: false,
+            rewriteLinks: false
+        });
 
         $stateProvider.state('home', {
             url: '/',

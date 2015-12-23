@@ -58,7 +58,9 @@
 
 
 
-    <div ui-view class="reveal-animation"></div>
+    <div ui-view class="reveal-animation">
+        @yield('content')
+    </div>
 
     <div class="twitter_fot marg50">
         <div class="container ">
@@ -108,6 +110,10 @@
 <script type="text/javascript" src="/assets/js/retina.js"></script>
 <script type="text/javascript" src="/assets/js/testimonialrotator.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.dlmenu.js"></script>
+
+<script type="text/javascript" src="https://js.stripe.com/v2/"></script>
+<script type="text/javascript" src="/assets/js/jquery.payment.js"></script>
+
 {{--<script type="text/javascript" src="/assets/js/main.js"></script>--}}
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
