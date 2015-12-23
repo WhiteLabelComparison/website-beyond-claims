@@ -1,7 +1,8 @@
 
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" ng-app="ClaimApplication">
 <head>
+    <base href="/">
     <meta charset="utf-8">
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <title>@yield('title') - Beyond Comparison Claims - beyondcomparisonclaims.co.uk</title>
@@ -28,23 +29,23 @@
             <nav>
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-3 pull-left"><div class="logo"><a href="/"><img src="/assets/img/logo.png" alt="" /></a></div></div>
+                        <div class="col-lg-3 pull-left"><div class="logo"><a ui-sref="home"><img src="/assets/img/logo.png" alt="" /></a></div></div>
                         <div class="col-lg-9 pull-right">
                             <div class="menu">
                                 <div id="dl-menu">
                                     <button class="dl-trigger">Open Menu</button>
                                     <ul class="dl-menu">
-                                        <li @if($menuItem=='index')class="current"@endif><a href="/" data-description="Get Started">Home</a></li>
+                                        <li ui-sref-active="current"><a ui-sref="home" data-description="Get Started">Home</a></li>
                                         <!-- <li @if($menuItem=='about')class="current"@endif><a href="/about-us" data-description="Who are we?">About Us</a></li> -->
-                                        <li @if(substr($menuItem,0,8)=='services')class="current"@endif><a href="/our-services" data-description="How can we help?">Our Services</a>
+                                        <li ui-sref-active="current"><a ui-sref="services" data-description="How can we help?">Our Services</a>
                                             <ul class="dl-submenu">
-                                                <li><a href="/our-services/package-bank-accounts">Package Bank Accounts</a></li>
-                                                <li><a href="/our-services/payment-protection-insurance">Payment Protection Insurance</a></li>
+                                                <li ui-sref-active="current"><a ui-sref="package-bank-accounts">Package Bank Accounts</a></li>
+                                                <li ui-sref-active="current"><a ui-sref="payment-protection-insurance">Payment Protection Insurance</a></li>
                                                 <!-- <li><a href="/our-services/payment-protection-insurance-redress">PPI Redress</a></li> -->
                                             </ul>
                                         </li>
-                                        <li><a href="/won-what-now" data-description="What to do next">Won?</a></li>
-                                        <li @if($menuItem=='contact')class="current"@endif><a href="/contact-us" data-description="Get In Touch">Contact</a></li>
+                                        <li ui-sref-active="current"><a ui-sref="won-what-now" data-description="What to do next">Won?</a></li>
+                                        <li ui-sref-active="current"><a ui-sref="contact-us" data-description="Get In Touch">Contact</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -57,10 +58,7 @@
 
 
 
-
-    @yield('content')
-
-
+    <div ui-view class="reveal-animation"></div>
 
     <div class="twitter_fot marg50">
         <div class="container ">
@@ -90,7 +88,7 @@
                     <ul class="contacts images_bg">
                         <li class="address">Unit 8 Quay Reach, Carolina Way, Salford, M50 2ZY.</li>
                         <li class="phone">Phone:  <a href="#">0161 241 4650</a></li>
-                        <li class="email">E-Mail: <a href="mailto:admin@beyondcomparison.co.uk">admin@beyondcomparison.co.uk</a></li>
+                        <li class="email">E-Mail: <a href="mailto:admin@beyondcomparison.com">admin@beyondcomparison.com</a></li>
                     </ul>
                 </div>
             </div>
@@ -110,6 +108,9 @@
 <script type="text/javascript" src="/assets/js/retina.js"></script>
 <script type="text/javascript" src="/assets/js/testimonialrotator.js"></script>
 <script type="text/javascript" src="/assets/js/jquery.dlmenu.js"></script>
-<script type="text/javascript" src="/assets/js/main.js"></script>
+{{--<script type="text/javascript" src="/assets/js/main.js"></script>--}}
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.0/angular.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="/assets/js/claimApp.js"></script>
 </body>
 </html>

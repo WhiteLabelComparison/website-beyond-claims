@@ -15,6 +15,8 @@ if ($comingSoon && !$isLocal)
 } else {
     // Lets do the normal route finding
 
+    Route::get('partials/{partialFile?}', 'StaticPageController@partial')->where('partialFile', '(.*)');
+
     Route::get('', 'StaticPageController@index');
 
     // Hide the about us page for now

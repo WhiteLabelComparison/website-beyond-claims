@@ -8,6 +8,42 @@ use Illuminate\Support\Facades\Mail;
 
 class StaticPageController extends Controller {
 
+    public function partial($fileName)
+    {
+        return view("pages.static." . str_replace('/', '.', $fileName), [
+            'attractions' => [
+                [
+                    'image' => [
+                        'url' => '/assets/images/carousel/coffee.jpg',
+                        'alt' => 'Coffee Table',
+                    ],
+                    'description' => 'Apply from the comfort of your own home',
+                ],
+                [
+                    'image' => [
+                        'url' => '/assets/images/carousel/dog.jpg',
+                        'alt' => 'husky',
+                    ],
+                    'description' => 'There is nothing to loose, and plenty to gain',
+                ],
+                [
+                    'image' => [
+                        'url' => '/assets/images/carousel/group.jpg',
+                        'alt' => 'Group of Friends',
+                    ],
+                    'description' => 'Spend more time doing the things you love',
+                ],
+                [
+                    'image' => [
+                        'url' => '/assets/images/carousel/train.jpg',
+                        'alt' => 'Phone Call',
+                    ],
+                    'description' => 'Quick, easy and hassle free',
+                ],
+            ]
+        ]);
+    }
+
     public function index()
     {
         $data = [
@@ -91,7 +127,7 @@ class StaticPageController extends Controller {
         {
             $message->from($this->request->get('email'), $this->request->get('name'));
             $message->subject($this->request->get('subject'));
-            $message->to('info@choiceclaims.co.uk');
+            $message->to('admin@beyondcomparison.com');
         });
 
         return back()->withErrors(['Thank you for your message, we will reply as soon as possible.']);
@@ -105,7 +141,7 @@ class StaticPageController extends Controller {
 
     protected function showStaticPage($page, Array $data = [])
     {
-        return view('pages.static.' . $page, [
+        return view('pages.templates.' . $page, [
             'menuItem' => $page,
         ], $data);
     }
