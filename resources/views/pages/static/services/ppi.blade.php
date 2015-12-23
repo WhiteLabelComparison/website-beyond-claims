@@ -53,7 +53,7 @@
         <div class="col-lg-8 col-md-8">
             <h3 class="title"><span>Were you miss-sold?</span></h3>
 
-            <p class="about_text">Choice Claims can assess your claim and advise if we believe you have been miss-sold Payment Protection Insurance. Our team knows where the banks have cut corners or not advised you as they should have. Get in touch for us to start your claim. You may have been miss-sold for one or more of the following reasons.</p>
+            <p class="about_text">Beyond Comparison Claims can assess your claim and advise if we believe you have been miss-sold Payment Protection Insurance. Our team knows where the banks have cut corners or not advised you as they should have. Get in touch for us to start your claim. You may have been miss-sold for one or more of the following reasons.</p>
 
 
             <div class="col-lg-12 marg25">
