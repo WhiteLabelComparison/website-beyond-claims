@@ -135,8 +135,11 @@ class StaticPageController extends Controller {
 
     public function paymentComplete()
     {
+        $transaction = session('transaction');
+
         return $this->showStaticPage('paymentcomplete', [
-            'transaction_id' => session('transaction'),
+            'transaction_id' => $transaction['id'],
+            'payment_total' => $transaction['total'] / 100,
         ]);
     }
 
