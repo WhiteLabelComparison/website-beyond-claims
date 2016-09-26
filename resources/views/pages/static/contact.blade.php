@@ -52,7 +52,7 @@
             <h3 class="title"><span>Information</span></h3>
             <p class="adress_cont">
                 <i class="fa fa-building-o icon_foot"></i> Address: Unit 8 Quay Reach, Carolina Way, Salford, M50 2ZY.<br>
-                <i class="fa fa-phone icon_foot"></i> Phone: 0161 241 4650<br>
+                <i class="fa fa-phone icon_foot"></i> Phone: 0161 396 6000<br>
                 <i class="fa fa-envelope icon_foot"></i>  Email: <a href="mailto:admin@beyondcomparison.com" target="_blank" class="colorend">admin@beyondcomparison.com</a>
             </p>
             <h3 class="title"><span>Business Hours</span></h3>
