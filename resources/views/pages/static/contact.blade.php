@@ -20,28 +20,50 @@
             <h3 class="title"><span>Contact Form</span></h3>
             <p class="about_text" style="color:#777;"><i>If you can't find the answer to your question on our website, or you'd just like to ask us to call you back then please enter your details in the form below. We will get back in touch with you as soon as possible.</i></p>
 
-            @if ($errors->any())
+            @if (isset($success))
                 <div class="payment-errors alert alert-success">
-                    <p>{{ $errors->first() }}</p>
+                    <p>{{ $success }}</p>
+                </div>
+            @endif
+
+            @if($errors->any())
+                <div class="payment-errors alert alert-danger">
+                    <p><strong>Whoops : </strong>{{ $errors->first() }}</p>
                 </div>
             @endif
 
             <form action="/contact-us-send" method="post" id="contactForm">
           <span class="input">
-            <p class="contact-width"><input type="text" name="name" placeholder="Your name" class="form-control contact-width" size="40"></p>
-            <div class="alert alert-danger error" id="nameError"><i class="fa fa-times"></i> Oh snap! This field can't stay empty.</div>
+            <p class="contact-width">
+                <input type="text" name="name" placeholder="Your name" class="form-control contact-width" size="40" required>
+            </p>
+            <div class="alert alert-danger error" id="nameError">
+                <i class="fa fa-times"></i> Oh snap! This field can't stay empty.
+            </div>
           </span>
           <span class="input">
-            <p class="contact-width"><input type="text" name="email" placeholder="Your e-mail" class="form-control contact-width" size="40"></p>
-            <div class="alert alert-danger error" id="emailError"><i class="fa fa-times"></i> Oh snap! There was a mistake when writing a e-mail.</div>
+            <p class="contact-width">
+                <input type="text" name="email" placeholder="Your e-mail" class="form-control contact-width" size="40" required>
+            </p>
+            <div class="alert alert-danger error" id="emailError">
+                <i class="fa fa-times"></i> Oh snap! There was a mistake when writing a e-mail.
+            </div>
           </span>
           <span class="input">
-            <p class="contact-width"><input type="text" name="subject" placeholder="Subject" class="form-control" size="40"></p>
-            <div class="alert alert-danger error" id="subjectError"><i class="fa fa-times"></i> Oh snap! This field can't stay empty.</div>
+            <p class="contact-width">
+                <input type="text" name="subject" placeholder="Subject" class="form-control" size="40" required>
+            </p>
+            <div class="alert alert-danger error" id="subjectError">
+                <i class="fa fa-times"></i> Oh snap! This field can't stay empty.
+            </div>
           </span>
           <span class="input">
-            <p class="contact-width"><textarea name="message" placeholder="Your message" id="message" class="form-control"  cols="40" rows="10"></textarea></p>
-            <div class="alert alert-danger error" id="messageError"><i class="fa fa-times"></i> Oh snap! This field can't stay empty.</div>
+            <p class="contact-width">
+                <textarea name="message" placeholder="Your message" id="message" class="form-control"  cols="40" rows="10"></textarea>
+            </p>
+            <div class="alert alert-danger error" id="messageError">
+                <i class="fa fa-times"></i> Oh snap! This field can't stay empty.
+            </div>
           </span>
                 <br>
                 <div class="alert alert-success success" id="success"><i class="fa fa-check"></i> Well done! You message is successfully sent.</div>
