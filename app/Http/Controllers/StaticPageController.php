@@ -6,7 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Mail;
 
-class StaticPageController extends Controller {
+class StaticPageController extends Controller
+{
 
     public function partial($fileName)
     {
@@ -108,6 +109,7 @@ class StaticPageController extends Controller {
     {
         return $this->showStaticPage('services.ppiredress');
     }
+
     // End of Services Pages
 
 
@@ -123,14 +125,31 @@ class StaticPageController extends Controller {
 
     public function contactPost()
     {
-        Mail::raw($this->request->get('message'), function($message)
-        {
-            $message->from($this->request->get('email'), $this->request->get('name'));
-            $message->subject($this->request->get('subject'));
-            $message->to('admin@beyondcomparison.com');
-        });
+        try {
 
-        return back()->withErrors(['Thank you for your message, we will reply as soon as possible.']);
+            $this->validate($this->request, [
+                'email' => 'required|email',
+                'name' => 'required',
+                'subject' => 'required',
+                'message' => 'required',
+            ]);
+
+            Mail::raw($this->request->get('message'), function ($message) {
+                $message->from('noreply@beyondcomparisonclaims.com')
+                    ->subject("{$this->request->get('name')}: {$this->request->get('subject')}")
+                    ->replyTo($this->request->get('email'), $this->request->get('name'))
+                    ->to(env('EMAIL_ADDRESS', 'admin@beyondcomparison.com'), 'Beyond Comparison Claims');
+            });
+
+            return back()->with([
+                'success' => 'Thank you for your message, we will reply as soon as possible.'
+            ]);
+
+        } catch (\Exception $e) {
+            return redirect()
+                ->back()
+                ->withErrors(['Unexpected error occurred, please try again or contact us directly']);
+        }
     }
 
     public function paymentComplete()
