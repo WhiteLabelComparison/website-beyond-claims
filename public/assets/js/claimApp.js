@@ -47,4 +47,39 @@ var AngularApplication = angular.module('ClaimApplication', ['ui.router'])
             url: '/contact-us',
             templateUrl: '/partials/contact'
         })
+    }])
+    .controller('ContactController', ['$scope', '$http', function($scope, $http) {
+
+
+        $scope.loading = false;
+        $scope.done = false;
+        $scope.errors = {};
+
+        $scope.submit = function() {
+            $scope.loading = true;
+            $http({
+                method: 'post',
+                url: '/contact-us-send',
+                data: {
+                    'email': $scope.email,
+                    'name':$scope.name,
+                    'subject':$scope.subject,
+                    'message':$scope.message
+                },
+                headers: {'Accept': 'application/json', 'Cache-Control': 'application/json'}
+            }).then(function(response) {
+                $scope.loading = false;
+                $scope.done = true;
+                $scope.errors = {};
+                // reset
+                $scope.name = '';
+                $scope.email = '';
+                $scope.subject = '';
+                $scope.message = '';
+            }, function(response) {
+                $scope.done = false;
+                $scope.loading = false;
+                $scope.errors = response.data;
+            });
+        };
     }]);

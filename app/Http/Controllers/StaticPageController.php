@@ -2,6 +2,8 @@
 
 namespace ChoiceClaims\Http\Controllers;
 
+use Illuminate\Contracts\Validation\ValidationException;
+use Illuminate\Http\Exception\HttpResponseException;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Mail;
@@ -125,6 +127,7 @@ class StaticPageController extends Controller
 
     public function contactPost()
     {
+
         try {
 
             $this->validate($this->request, [
@@ -135,20 +138,19 @@ class StaticPageController extends Controller
             ]);
 
             Mail::raw($this->request->get('message'), function ($message) {
-                $message->from('noreply@beyondcomparisonclaims.com')
+                $message->from('noreply@beyondcomparisonclaims.com', 'Beyond Comparison Claims')
                     ->subject("{$this->request->get('name')}: {$this->request->get('subject')}")
                     ->replyTo($this->request->get('email'), $this->request->get('name'))
                     ->to(env('EMAIL_ADDRESS', 'admin@beyondcomparison.com'), 'Beyond Comparison Claims');
             });
 
-            return back()->with([
-                'success' => 'Thank you for your message, we will reply as soon as possible.'
+            return response()->json([
+                'success' => true,
+                'message' => 'Message has been sent',
             ]);
 
-        } catch (\Exception $e) {
-            return redirect()
-                ->back()
-                ->withErrors(['Unexpected error occurred, please try again or contact us directly']);
+        } catch(HttpResponseException $e) {
+            return $e->getResponse();
         }
     }
 

@@ -19,55 +19,32 @@
         <div class="col-lg-8">
             <h3 class="title"><span>Contact Form</span></h3>
             <p class="about_text" style="color:#777;"><i>If you can't find the answer to your question on our website, or you'd just like to ask us to call you back then please enter your details in the form below. We will get back in touch with you as soon as possible.</i></p>
-
-            @if (isset($success))
-                <div class="payment-errors alert alert-success">
-                    <p>{{ $success }}</p>
+            <form ng-submit="submit()" ng-controller="ContactController">
+                <div class="alert alert-success" ng-class="{hidden:!done}">
+                    <strong>Thank You:</strong> Thanks for sending us a message, we'll be in contact shortly.
                 </div>
-            @endif
-
-            @if($errors->any())
-                <div class="payment-errors alert alert-danger">
-                    <p><strong>Whoops : </strong>{{ $errors->first() }}</p>
-                </div>
-            @endif
-
-            <form action="/contact-us-send" method="post" id="contactForm">
-          <span class="input">
-            <p class="contact-width">
-                <input type="text" name="name" placeholder="Your name" class="form-control contact-width" size="40" required>
-            </p>
-            <div class="alert alert-danger error" id="nameError">
-                <i class="fa fa-times"></i> Oh snap! This field can't stay empty.
-            </div>
-          </span>
-          <span class="input">
-            <p class="contact-width">
-                <input type="text" name="email" placeholder="Your e-mail" class="form-control contact-width" size="40" required>
-            </p>
-            <div class="alert alert-danger error" id="emailError">
-                <i class="fa fa-times"></i> Oh snap! There was a mistake when writing a e-mail.
-            </div>
-          </span>
-          <span class="input">
-            <p class="contact-width">
-                <input type="text" name="subject" placeholder="Subject" class="form-control" size="40" required>
-            </p>
-            <div class="alert alert-danger error" id="subjectError">
-                <i class="fa fa-times"></i> Oh snap! This field can't stay empty.
-            </div>
-          </span>
-          <span class="input">
-            <p class="contact-width">
-                <textarea name="message" placeholder="Your message" id="message" class="form-control"  cols="40" rows="10"></textarea>
-            </p>
-            <div class="alert alert-danger error" id="messageError">
-                <i class="fa fa-times"></i> Oh snap! This field can't stay empty.
-            </div>
-          </span>
+                <span class="input">
+                    <p class="contact-width"><input type="text" ng-model="name" placeholder="Your name" class="form-control contact-width" size="40"></p>
+                    <div class="alert alert-danger" ng-class="{error:!errors.name}" id="nameError"><i class="fa fa-times"></i> @{{ errors.name[0] }}</div>
+                </span>
+                <span class="input">
+                    <p class="contact-width"><input type="text" ng-model="email" placeholder="Your e-mail" class="form-control contact-width" size="40"></p>
+                    <div class="alert alert-danger" ng-class="{error:!errors.name}" id="emailError"><i class="fa fa-times"></i> @{{ errors.email[0] }}</div>
+                </span>
+                <span class="input">
+                    <p class="contact-width"><input type="text" ng-model="subject" placeholder="Subject" class="form-control" size="40"></p>
+                    <div class="alert alert-danger" ng-class="{error:!errors.subject}" id="subjectError"><i class="fa fa-times"></i> @{{ errors.subject[0] }}</div>
+                </span>
+                <span class="input">
+                    <p class="contact-width"><textarea ng-model="message" placeholder="Your message" id="message" class="form-control"  cols="40" rows="10"></textarea></p>
+                    <div class="alert alert-danger" ng-class="{error:!errors.message}" id="messageError"><i class="fa fa-times"></i> @{{ errors.message[0] }}</div>
+                </span>
                 <br>
-                <div class="alert alert-success success" id="success"><i class="fa fa-check"></i> Well done! You message is successfully sent.</div>
-                <p><input type="submit" id="send" class="btn btn-default btn-small" value="Send message" /></p>
+                <div class="alert alert-success success" id="success">
+                    <i class="fa fa-check"></i> Well done! You message is successfully sent.</div>
+                <p>
+                    <input type="submit" id="send" class="btn btn-default btn-small" value="Send message" ng-disabled="loading"/>
+                </p>
             </form>
         </div>
         <div class="col-lg-4">
@@ -79,7 +56,8 @@
             </p>
             <h3 class="title"><span>Business Hours</span></h3>
             <p class="adress_cont">
-                <i class="fa fa-unlock icon_foot"></i> Weekdays: 9am to 5:30pm<br>
+                <i class="fa fa-unlock icon_foot"></i> Monday - Thursday: 10am to 7:00pm<br>
+                <i class="fa fa-unlock icon_foot"></i> Friday: 10am to 2:00pm<br>
                 <i class="fa fa-lock icon_foot"></i>  &nbsp;&nbsp;Weekends: closed
             </p>
             <h3 class="title"><span>Social Network</span></h3>
