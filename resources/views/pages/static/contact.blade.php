@@ -29,7 +29,7 @@
                 </span>
                 <span class="input">
                     <p class="contact-width"><input type="text" ng-model="email" placeholder="Your e-mail" class="form-control contact-width" size="40"></p>
-                    <div class="alert alert-danger" ng-class="{error:!errors.name}" id="emailError"><i class="fa fa-times"></i> @{{ errors.email[0] }}</div>
+                    <div class="alert alert-danger" ng-class="{error:!errors.email}" id="emailError"><i class="fa fa-times"></i> @{{ errors.email[0] }}</div>
                 </span>
                 <span class="input">
                     <p class="contact-width"><input type="text" ng-model="subject" placeholder="Subject" class="form-control" size="40"></p>
