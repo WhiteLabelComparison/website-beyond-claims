@@ -86,6 +86,12 @@
                 </div>
 
                 <div class="col-lg-5 col-md-5">
+                    <div class="footer-block">Terms and Complaints</div>
+                    <ul>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/wlc-portal/claims/terms-of-business.pdf">View our Terms and Conditions</a></li>
+                        <li><a href="https://s3-eu-west-1.amazonaws.com/wlc-portal/claims/complaints-procedure.pdf">View our Complaints Procedure</a></li>
+                    </ul>
+                    
                     <div class="footer-block">Contact info</div>
                     <ul class="contacts images_bg">
                         <li class="address">Unit 8 Quay Reach, Carolina Way, Salford, M50 2ZY.</li>
