@@ -80,7 +80,8 @@
         <div class="col-lg-4 col-md-4">
             <h3 class="title"><span>What do I receive?</span></h3>
 
-            <p class="about_text">A typical claim results in a settlement of just over £760, is completed in 4-8 weeks and will be paid directly to you. Our simple process is described below.</p>
+            <p class="about_text">A typical claim results in a settlement of around £1,800, can be completed completed in 15 weeks and will be paid directly to you. Our simple process is described below.</p>
+            <p class=text-muted">Averages above taken from the pervious 12 months of PPI wins for Beyond Comparison Claims Clients.</p>
 
             <div class="col-lg-12 marg25">
                 <div class="iconbox"><i class="fa fa-phone-square size_35"></i><br>
