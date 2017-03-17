@@ -91,8 +91,9 @@
         <div class="col-lg-4 col-md-4">
             <h3 class="title"><span>What do I receive?</span></h3>
 
-            <p class="about_text">A typical claim results in a settlement of just over £760, is completed in 4-8 weeks and will be paid directly to you. Our simple process is described below.</p>
-
+            <p class="about_text">A typical claim results in a settlement of around £876, can be completed completed in 8 weeks and will be paid directly to you. Our simple process is described below.</p>
+            <p class=text-muted">Averages above taken from the previous 12 months of PBA wins for Beyond Comparison Claims Clients ending on 17th March 2017.</p>
+            
             <div class="col-lg-12 marg25">
                 <div class="iconbox"><i class="fa fa-phone-square size_35"></i><br>
                     <div class="name_serv_icons">Step 1</div>
